@@ -13,7 +13,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 The observation space consists of 3 consecutive frames of 8 variables corresponding to the position and velocity of the ball and racket. The size of an observation for each agent is 24. The environment is in 2 dimension; so 2 variables are used to represent the position and velocity of the ball and of the racket. Which gives a size of 2x2 +2x2 = 8 for each frame.\
 ## REQUIREMENTS
 To set up your python environment to run the code in this repository, follow the instructions below.\
-1- Create (and activate) a new environment with Python 3.6.\
+1- Create (and activate) a new environment with Python 3.6.
 - **Linux** or **Mac:**
   ```
   conda create --name drlnd python=3.6
