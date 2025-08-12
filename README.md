@@ -25,5 +25,5 @@ To set up your python environment to run the code in this repository, follow the
   activate drlnd
   ```
 
-2- 
+2- Install OpenAi gym from [this repository](https://github.com/openai/gym)
 
