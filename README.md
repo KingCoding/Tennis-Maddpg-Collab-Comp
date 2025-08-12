@@ -1,4 +1,5 @@
 # Tennis-Maddpg-Collab-Comp
+![Tennis snapshot](https://video.udacity-data.com/topher/2018/May/5af7955a_tennis/tennis.png)
 ## Description
 Implementation of a solution to training a Tennis environment with 2 agents using the Multi agent reinforcement Learning with DDPG algorithm and with collaboration and competition.
 
