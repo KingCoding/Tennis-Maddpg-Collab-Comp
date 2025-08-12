@@ -46,3 +46,6 @@ To set up your python environment to run the code in this repository, follow the
 (For AWS) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip) to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the Linux operating system above.)
 
 5- Place the downloaded Unity environment file in this GitHub repository, in the Tennis-Maddpg-Collab-Comp/ folder, and unzip (or decompress) the file.
+
+## EXECUTION
+Run the intructions in the Tennis-Collaboration-Competition-Solution.ipynb file to train the Tennis agents.
