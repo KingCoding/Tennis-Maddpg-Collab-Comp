@@ -27,7 +27,7 @@ To set up your python environment to run the code in this repository, follow the
 
 2- Install OpenAi gym from [this repository](https://github.com/openai/gym)
 - install the classic control environment group through [this link](https://github.com/openai/gym#classic-control)
-- install the box2d environment group through [this link](https://github.com/openai/gym#box2d)\
+- install the box2d environment group through [this link](https://github.com/openai/gym#box2d)
 
 3- If you haven't yet done it, clone this repository, then navigate to the python/ folder and install several dependencies.
   ```
