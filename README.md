@@ -15,15 +15,15 @@ The observation space consists of 3 consecutive frames of 8 variables correspond
 To set up your python environment to run the code in this repository, follow the instructions below.\
 1- Create (and activate) a new environment with Python 3.6.\
 - **Linux** or **Mac:**
-  '''
+  ```
   conda create --name drlnd python=3.6
   source activate drlnd
-  '''
+  ```
 - ***Windows:***
-  '''
+  ```
   conda create --name drlnd python=3.6 
   activate drlnd
-  '''
+  ```
 
 2- 
 
