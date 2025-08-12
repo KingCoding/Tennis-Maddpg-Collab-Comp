@@ -4,7 +4,8 @@ Implementation of a solution to training a Tennis environment with 2 agents usin
 
 The environment of this Tennis game provides observation states for 2 agents whose positions are represented by the positions of two rakets. The goal of the 2 agents is to collaborate while competing in order to maimize their collective rewards.
 Precisely, If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.\
-The task is episodic:\
+\
+The task is episodic:
 - After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the     maximum of these 2 scores.
 - This yields a single score for each episode.\
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
