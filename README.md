@@ -7,7 +7,7 @@ Precisely, If an agent hits the ball over the net, it receives a reward of +0.1.
 \
 The task is episodic:
 - After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the     maximum of these 2 scores.
-- This yields a single score for each episode.\
+- This yields a single score for each episode.\\
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.\
 The observation space consists of 3 consecutive frames of 8 variables corresponding to the position and velocity of the ball and racket. The size of an observation for each agent is 24. The environment is in 2 dimension; so 2 vriables are used to represent the position and velocity of the ball and of the racket. Which gives a size of 2x2 +2x2 = 8 for each frame.
 
