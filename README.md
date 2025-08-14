@@ -30,7 +30,7 @@ To set up your python environment to run the code in this repository, follow the
 - install the classic control environment group through [this link](https://github.com/openai/gym#classic-control)
 - install the box2d environment group through [this link](https://github.com/openai/gym#box2d)
 
-3- If you haven't yet done it, clone this repository, then navigate to the main Tennis-MultiAgent/ folder.\
+3- If you haven't yet done it, clone this repository, then navigate to the main Tennis-Maddpg-Collab-Comp/ folder.\
    There is no need to run the command pip install . in order to make initial python installation, because the main project file does it first
   ```
   git clone https://github.com/abhismatrix1/Tennis-Maddpg-Collab-Comp.git
