@@ -1,10 +1,10 @@
-##INTRODUCTION##
+## INTRODUCTION
 This project about collaboration and competition of AI agents to solved a Tennis environment, has been a challenging, exciting and enriching experience. And I think that achieving a professional solution for this project helped me discover a general framework for training Multi-Agent environments with Reinforcement Learning.
 There has been a lot of try and fail in the process of finding the right method. A great part of the complexity came from the fact that there was quite some ambiguities in understanding the environment. I could not make good sense of the data provided in the state of each agent. Until I went in the student group and searched posts related to the project. Then I was able to make a clear sense of the states provided to the agents. Each state contains 3 frames of data taken at distinct but very close times. When I understood that, I first tried to simplify the states by considering only one frame of data; but despite all my efforts, I couldn't find a working solution.
 After I stopped trying to simplify the states by considering only one of the 3 frames, I started learning from the course notes and from the preparation lab project; to try to find an intuition for solving this environment. Understanding the preparation project took me a lot of time. Because I was trying to make sense of almost all its parts in order to equip myself optimally for this project.
 And after trying many solutions in vain, I finally got a very bright intuition that led to a very flexible solution that is also fast. One of the best aspect of my solution is that it utilizes a lot more collaboration of both agents than just sharing the same replay buffer without compromising the competition between the agents. That is, at each learning step, agents really utilize each other observations to perform their trainings.
 
-##LEARNING ALGORITHM##
+## LEARNING ALGORITHM
 The bright intuition I had for this project came when I first considered a practical approach by thinking about what a tennis player in the real physical world needs to take decisions while playing.
 In other words, what are all the information he needs on the court either from him and from his opponent, to take good decisions for his actions?
 After pondering on the above question for a while, I realized that all what is needed by an agent to take good decisions for his actions are:
@@ -65,7 +65,7 @@ Lastly, the experiences I saved in the replay buffer were not individual experie
 GRAPH TO SHOW THE PLOT OF AVERAGE REWARDS FOR 100 CONSECUTIVE AGENTS.
 ...
 
-##IDEAS FOR FUTURE WORK##
+## IDEAS FOR FUTURE WORK
 These are some improvements ideas from the least important to the most important.
 
 1- Since I didn't try a lot of hyperparameters once i got the algorithm working, it's possible to try new combinations of values for some hyperparameters in order to see if we could achieve better rewards.
