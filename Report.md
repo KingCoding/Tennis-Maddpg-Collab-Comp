@@ -34,7 +34,7 @@ And that's the mistake I made. I maximized the collaboration to facilitate the t
 
 So the final adjustement was to reduce the input of actor networks to just the individual observations of the agents. But still consider the full state of the game made of observations of all agents when training the critic networks. It's true that it sacrifices a bit of collaboration and flexibility, but the solution is more independent. Agents won't have to consider their opponent positions during execution time.
 
-The general diagram given in the course notes for the MUlti-Agent Reinforcement Learning course can help summarize the way our algorithm works. In green we can see the flow of process and information during training. We see that each critic network (Qi) utilizes information (observations/actions) from many agent in order to make prediction and perform the training. But in red, the flow of process and information during execution shows us that each agent utilizes its personal observation and actions to perform the execution.
+The general diagram given in the course notes for the MUlti-Agent Reinforcement Learning course can help summarize the way our algorithm works. In green we can see the flow of process and information during training. We see that each critic network (Qi) utilizes information (observations/actions) from many agent in order to make prediction and perform the training and actors (Pi) rely on critics during training. But in red, the flow of process and information during execution shows us that each agent utilizes its personal observation and actions to perform the execution.
 
 ![MADDP diagram](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/MADDPG%20diagram.png)
 
