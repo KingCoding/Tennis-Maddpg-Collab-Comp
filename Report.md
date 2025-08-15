@@ -46,7 +46,7 @@ The architecture for the networks used was pretty simple. Because I had the brig
 The first architecture I borrowed was from the lab project, I tried to change some parameters to fit their netowrk to the size of my project (states, actions). But since I was struggling to make things work, I got the idea to reach out to the student community and borrow the architecture of a student who had already solved the project and who had used the DDPG algorithm. It still didn't work well until I merged the architecture from the lab project and that of a student.
 And that's the final architecture I used to make the project work. What I learned from the student was the utilization of batchnorm between entwork layers. Beside that, the concept of the architecture relied of that of the preparation project.
 
-# Networks configuration
+### Networks configuration
 - Number of Actor networks = 2 (1 for each agent)
 - Number of critic networks = 2 (1 for each agent)
 - Size of each actor network = (24, 400, 300, 2)
@@ -58,11 +58,11 @@ I first started with the hyperparameters given in the lab preparation project, b
 Sometimes it would work, sometimes it would unlearn and decrease completely.
 So the solution came when I decreased my learning rate for both the actor and critic networks. What I copied from the lab preparation project was 10^-2, I decreased them to 10^-3 and voila! the program started working excellently. The training was stable and there was no longer significant deep in rewards values.
 
-# Hyperparameters
+### Hyperparameters
 - Replay buffer size = 1e6
 - Minibatch size = 128
-- Discount factor = 0.99
-- Soft update of target parameters coefficient(TAU) = 1e-3
+- Discount factor = 0.95
+- Soft update of target parameters coefficient(TAU) = 1e-2
 - Actor network learning rate = 1e-3
 - Critic network learning rate = 1e-3
 - How often to update the network (time steps) = 20
