@@ -34,9 +34,9 @@ And that's the mistake I made. I maximized the collaboration to facilitate the t
 
 So the final adjustement was to reduce the input of actor networks to just the individual observations of the agents. But still consider the full state of the game made of observations of all agents when training the critic networks. It's true that it sacrifices a bit of collaboration and flexibility, but the solution is more independent. Agents won't have to consider their opponent positions during execution time.
 
-The general diagram given in the course notes for the MUlti-Agent Reinforcement Learning course can help summarize the way our algorithm works.
+The general diagram given in the course notes for the MUlti-Agent Reinforcement Learning course can help summarize the way our algorithm works. In green we can see the flow of process and information during training. We see that each critic network (Qi) utilizes information (observations/actions) from many agent in order to make prediction and perform the training and actors (Pi) rely on critics during training. But in red, the flow of process and information during execution shows us that each agent utilizes its personal observation and actions to perform the execution.
 
-POST DIAGRAM AND COMMENT
+![MADDP diagram](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/MADDPG%20diagram.png)
 
 
 At the end, I came to realize that both solutions are very good depending on the goals to achieve. If we want to make the agents play independently, we have to implement the exact solution of the MUlti-Agent Reinforcement Learning course. That is, feed the actors networks with individual observations of agents without using any collaboration. But using collaboration for the critic networks.
@@ -62,7 +62,9 @@ And after we run the soft updates for the target networks. This idea worked fine
 
 Lastly, the experiences I saved in the replay buffer were not individual experiences like many students did (which is very similar from that of the previous project for continous control), they were collective experiences for both agents saved in the same list. That is what I learned and utilized the most from the preparation lab project; how to save the experiences of many agent in the same list of experience and how to retrieve them without losing that association. Without this technic of how to save experiences of both agents for a time step collectively, it would have been very difficult, and nearly impossible to improve collaboration and implement a more flexible solution.
 
-GRAPH TO SHOW THE PLOT OF AVERAGE REWARDS FOR 100 CONSECUTIVE AGENTS.
+The max average score achieved during training was 1.82 at around 1100-1200 episodes, and the environment was solved at around 780 episodes in about 25 minutes.
+
+![Training Result Graph](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/Tennis-MADDP-Result-Graph.png)
 ...
 
 ## IDEAS FOR FUTURE WORK
