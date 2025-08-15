@@ -75,7 +75,7 @@ And after we run the soft updates for the target networks. This idea worked fine
 
 Lastly, the experiences I saved in the replay buffer were not individual experiences like many students did (which is very similar from that of the previous project for continous control), they were collective experiences for both agents saved in the same list. That is what I learned and utilized the most from the preparation lab project; how to save the experiences of many agent in the same list of experience and how to retrieve them without losing that association. Without this technic of how to save experiences of both agents for a time step collectively, it would have been very difficult, and nearly impossible to improve collaboration and implement a more flexible solution.
 
-The max average score achieved during training was 1.82 at around 1100-1200 episodes, and the environment was solved at around 780 episodes in about 25 minutes.
+The max average score achieved during training was 1.82 at around 1000-1100 episodes, and the environment was solved at 781 episodes in about 25 minutes.
 
 ![Training progress](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/Training%20progress.png)
 
