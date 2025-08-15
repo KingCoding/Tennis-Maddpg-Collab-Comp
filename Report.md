@@ -36,7 +36,7 @@ So the final adjustement was to reduce the input of actor networks to just the i
 
 The general diagram given in the course notes for the MUlti-Agent Reinforcement Learning course can help summarize the way our algorithm works.
 
-POST DIAGRAM AND COMMENT
+![MADDP diagram](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/MADDPG%20diagram.png)
 
 
 At the end, I came to realize that both solutions are very good depending on the goals to achieve. If we want to make the agents play independently, we have to implement the exact solution of the MUlti-Agent Reinforcement Learning course. That is, feed the actors networks with individual observations of agents without using any collaboration. But using collaboration for the critic networks.
