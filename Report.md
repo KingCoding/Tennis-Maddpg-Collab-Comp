@@ -46,14 +46,27 @@ The architecture for the networks used was pretty simple. Because I had the brig
 The first architecture I borrowed was from the lab project, I tried to change some parameters to fit their netowrk to the size of my project (states, actions). But since I was struggling to make things work, I got the idea to reach out to the student community and borrow the architecture of a student who had already solved the project and who had used the DDPG algorithm. It still didn't work well until I merged the architecture from the lab project and that of a student.
 And that's the final architecture I used to make the project work. What I learned from the student was the utilization of batchnorm between entwork layers. Beside that, the concept of the architecture relied of that of the preparation project.
 
-PRESENT HE SIZE OF THE NETWORKS, THE NUMBER OF NETWORKS, THE NUMBER OF BATCHNORM, ....
+# Networks configuration
+- Number of Actor networks = 2 (1 for each agent)
+- Number of critic networks = 2 (1 for each agent)
+- Size of each actor network = (24, 400, 300, 2)
+- Size of each critic network = (48, 256, 128, 1)
+- Batchnorm implemented between the first and second and the second and third layers of each networ type
 
 Tunning the hyperparameters to find acceptable parameters was the last technical challenge I face while implementing this project.
 I first started with the hyperparameters given in the lab preparation project, but the solution was very unstable. At some point, it looked like the training was unlearning all its progress and the rewards were decreasing almost back to zero.
 Sometimes it would work, sometimes it would unlearn and decrease completely.
 So the solution came when I decreased my learning rate for both the actor and critic networks. What I copied from the lab preparation project was 10^-2, I decreased them to 10^-3 and voila! the program started working excellently. The training was stable and there was no longer significant deep in rewards values.
 
-LIST RELATED HYPERPARAMETERS.
+# Hyperparameters
+- Replay buffer size = 1e6
+- Minibatch size = 128
+- Discount factor = 0.99
+- Soft update of target parameters coefficient(TAU) = 1e-3
+- Actor network learning rate = 1e-3
+- Critic network learning rate = 1e-3
+- How often to update the network (time steps) = 20
+- How many times to update networks for each agent = 8
 
 Another bright idea I applied to make to implement my algorithm, was to inspire myself from the previous project to find a way to access and sample the replay buffer.
 I first tried to use the method of the lab preparation project, but it seemed that it was inappropriate. Because the preparation project had 4 parallels environments and the way they were accessing and sampling their replay buffer seemed to not be appropriate for my project with no parallel environment.
