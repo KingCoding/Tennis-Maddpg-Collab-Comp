@@ -64,6 +64,8 @@ Lastly, the experiences I saved in the replay buffer were not individual experie
 
 The max average score achieved during training was 1.82 at around 1100-1200 episodes, and the environment was solved at around 780 episodes in about 25 minutes.
 
+![Training progress](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/Training%20progress.png)
+
 ![Training Result Graph](https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp/blob/main/pictures/Tennis-MADDP-Result-Graph.png)
 ...
 
