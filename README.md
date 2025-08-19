@@ -33,7 +33,7 @@ To set up your python environment to run the code in this repository, follow the
 3- If you haven't yet done it, clone this repository, then navigate to the main Tennis-Maddpg-Collab-Comp/ folder.\
    There is no need to run the command pip install . in order to make initial python installation, because the main project file does it first
   ```
-  git clone https://github.com/abhismatrix1/Tennis-Maddpg-Collab-Comp.git
+  git clone https://github.com/KingCoding/Tennis-Maddpg-Collab-Comp.git
   cd Tennis-Maddpg-Collab-Comp
   ```
 4- Download the Unity environment for this project that mathes your operating system:
